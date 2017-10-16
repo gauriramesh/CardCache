@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.android.gms.samples.vision.ocrreader.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/overlay">
+
+        <ListView
+            android:id="@+id/BusinessCardList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:layout_margin="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_camera2"
+            android:id="@+id/openCamera"
+            android:onClick="onClick"
+            android:layout_gravity="right|bottom" />
+
+        <ImageButton
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="85dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_link"
+            android:id="@+id/link"
+            android:layout_gravity="right|bottom" />
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

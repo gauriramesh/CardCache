@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.android.gms.samples.vision.ocrreader.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/overlay">
+
+        <ImageButton
+            android:layout_margin="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:id="@+id/openCamera"
+            android:onClick="onClick"
+            android:layout_gravity="center|bottom" />
+
+        <ListView
+            android:id="@+id/BusinessCardList"
+            android:layout_width="match_parent"
+            android:layout_height="509dp" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

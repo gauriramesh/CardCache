@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/hide_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/button_capture"
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_capture"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dp"
+            android:onClick="captureClick"
+            android:padding="40dp"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="388dp"
+        android:layout_height="298dp"
+        android:visibility="invisible"
+        android:layout_gravity="bottom"
+        android:background="#AAAAAACC">
+    <LinearLayout
+        android:layout_width="167dp"
+        android:layout_height="298dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="bottom|left"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/lastNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Last Name"/>
+
+        <EditText
+            android:id="@+id/firstNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/companyEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Company" />
+
+        <EditText
+            android:id="@+id/websiteEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Website" />
+
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="E-mail" />
+
+        <EditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Phone" />
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="298dp"
+        android:layout_gravity="bottom|right"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:ems="10"
+            android:inputType="textWebEditText" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:ems="10"
+            android:inputType="phone" />
+
+    </GridLayout>
+    </LinearLayout>
+
+</FrameLayout>
